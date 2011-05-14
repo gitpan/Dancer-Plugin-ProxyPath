@@ -7,10 +7,13 @@ my $builder = Module::Build->new(
     license             => 'perl',
     dist_author         => q{Alex Kalderimis <alex kalderimis at gmail dot com>},
     dist_version_from   => 'lib/Dancer/Plugin/ProxyPath.pm',
-    build_requires => {
+    requires => {
         'Dancer' => '1.2',
         'Dancer::Plugin' => 0,
+    },
+    build_requires => {
         'Test::More' => 0,
+        'Test::MockObject' => 0,
     },
     add_to_cleanup      => [ 'Dancer-Plugin-ProxyPath-*' ],
     create_makefile_pl => 'traditional',

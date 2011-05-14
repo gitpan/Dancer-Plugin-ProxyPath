@@ -7,6 +7,7 @@ WriteMakefile
   'PREREQ_PM' => {
                    'Dancer' => '1.2',
                    'Dancer::Plugin' => 0,
+                   'Test::MockObject' => 0,
                    'Test::More' => 0
                  },
   'INSTALLDIRS' => 'site',
